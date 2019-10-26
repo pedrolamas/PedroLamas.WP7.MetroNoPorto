@@ -1,0 +1,19 @@
+﻿<UserControl x:Class="PedroLamas.WP7.MetroNoPorto.Controls.MetroDoPortoLineIndicator"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:helpers="clr-namespace:PedroLamas.WP7.MetroNoPorto.Helpers"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    d:DesignHeight="480" d:DesignWidth="480">
+    
+    <helpers:Viewbox x:Name="LayoutRoot">
+        <Canvas Height="100" Width="100">
+            <Ellipse x:Name="BackgroundEllipse" Width="100" Height="100" Fill="Black" />
+            <TextBlock x:Name="LineIdTextBlock" Foreground="White" TextAlignment="Center" FontSize="56" Width="100" Canvas.Top="10" />
+        </Canvas>
+    </helpers:Viewbox>
+</UserControl>
